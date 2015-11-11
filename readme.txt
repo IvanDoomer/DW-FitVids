@@ -5,7 +5,7 @@ Tags: videos, fitvids, responsive
 Requires at least: 3.3
 Tested up to: 4.3.1
 Stable tag: 1.2
-License: GPLv2 or later
+License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Do you have publish some YouTube and another video website content in your blog and are looking to make them responsive? This plugin is what you're looking for!
