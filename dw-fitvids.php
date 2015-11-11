@@ -4,7 +4,7 @@ Plugin Name: DW FitVids
 Plugin URI: http://www.ti.blog.br/plugins/dw-fitvids/
 Description: This plugin makes videos responsive using the FitVids jQuery plugin on WordPress.
 Version: 1.2
-License: GPL
+License: GPL2
 Tags: videos, fitvids, responsive
 Author: Ivan Carlos
 Author URI: http://www.ti.blog.br/
