@@ -1,10 +1,10 @@
 === DW FitVids ===
-Contributors: IvanDoomer
+Contributors: IvanDoomer, frkr
 Donate link: https://www.patreon.com/IvanCarlos
 Tags: videos, fitvids, responsive
-Requires at least: 3.0
+Requires at least: 3.3
 Tested up to: 4.3.1
-Stable tag: 1.0
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,9 @@ Demo: http://www.gamepad.com.br/canais/
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+
+= 1.2 =
+* Fork compliance fixes
 
 = 1.0 =
 * First version
