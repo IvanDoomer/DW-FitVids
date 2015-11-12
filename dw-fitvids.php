@@ -10,7 +10,6 @@ Author: Ivan Carlos
 Author URI: http://www.ti.blog.br/
 */
 
-
 // protect yourself
 if ( !function_exists( 'add_action') ) {
 	echo "Hi there! Nice try. Come again.";
