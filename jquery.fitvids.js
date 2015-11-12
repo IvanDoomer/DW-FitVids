@@ -1,4 +1,3 @@
-/*global jQuery */
 /*jshint browser:true */
 /*!
 * FitVids 1.2.fork - by Davi Mesquita - https://github.com/frkr and IvanDoomer https://github.com/IvanDoomer
@@ -8,13 +7,13 @@
 
 ;(function( $ ){
 
-	  'use strict';
+  'use strict';
 
   $.fn.fitVids = function( options ) {
     var settings = {
- 	      customSelector: null,
- 	      ignore: null
-	    };
+      customSelector: null,
+      ignore: null
+    };
 
     if(!document.getElementById('fit-vids-style')) {
       // appendStyles: https://github.com/toddmotto/fluidvids/blob/master/dist/fluidvids.js
@@ -42,10 +41,10 @@
       if (settings.customSelector) {
         selectors.push(settings.customSelector);
       }
-	  
-	  var ignoreList = '.fitvidsignore';
-	  
-	  if(settings.ignore) {
+
+      var ignoreList = '.fitvidsignore';
+
+      if(settings.ignore) {
         ignoreList = ignoreList + ', ' + settings.ignore;
       }
 
@@ -55,11 +54,11 @@
 
       $allVideos.each(function(count){
         var $this = $(this);
-		if($this.parents(ignoreList).length > 0) {
+        if($this.parents(ignoreList).length > 0) {
           return; // Disable FitVids on this video.
         }
         if (this.tagName.toLowerCase() === 'embed' && $this.parent('object').length || $this.parent('.fluid-width-video-wrapper').length) { return; }
-		if ((!$this.css('height') && !$this.css('width')) && (isNaN($this.attr('height')) || isNaN($this.attr('width'))))
+        if ((!$this.css('height') && !$this.css('width')) && (isNaN($this.attr('height')) || isNaN($this.attr('width'))))
         {
           $this.attr('height', 9);
           $this.attr('width', 16);
@@ -68,7 +67,7 @@
             width = !isNaN(parseInt($this.attr('width'), 10)) ? parseInt($this.attr('width'), 10) : $this.width(),
             aspectRatio = height / width;
         if(!$this.attr('id')){
-          var videoID = 'fitvid' + count);
+          var videoID = 'fitvid' + count;
           $this.attr('id', videoID);
         }
 		if($this.attr('src').indexOf('youtube.com')!=-1 || $this.attr('src').indexOf('youtube-nocookie.com')!=-1){
@@ -81,7 +80,7 @@
 		  srcYTVariables +='showinfo=0&rel=0&iv_load_policy=3&autohide=1';
 		  $this.attr('src',srcYTVariables);
 		}
-        $this.wrap('<div class="fluid-width-video-wrapper"></div>').parent('.fluid-width-video-wrapper').css('padding-top', (aspectRatio * 100)+"%");
+        $this.wrap('<div class="fluid-width-video-wrapper"></div>').parent('.fluid-width-video-wrapper').css('padding-top', (aspectRatio * 100)+'%');
         $this.removeAttr('height').removeAttr('width');
       });
     });
