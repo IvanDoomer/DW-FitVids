@@ -67,7 +67,6 @@ class fitvids_wp {
 			<p>Add a custom selector for FitVids if you are using videos that are not supported by default. <a href="https://github.com/davatron5000/FitVids.js#add-your-own-video-vendor" target="_blank"> Need help?</a></p>
 			<p><em>jQuery().fitVids({ customSelector: " <input id="fitvids_wp_custom_selector" value="<?php echo stripslashes(get_option('fitvids_wp_custom_selector')); ?>" name="fitvids_wp_custom_selector" type="text"> "});</em></p>
 
-
 			<p class="submit"><input type="submit" name="submit" class="button-primary" value="Save Changes" /></p>
 
 		  </td>
