@@ -42,11 +42,9 @@ class fitvids_wp {
 	   	if( isset($_POST['submit']) && check_admin_referer('fitvids_action','fitvids_ref') ) {
 			  $fitvids_wp_message = '';
 
-	   		update_option('fitvids_wp_jq', addslashes($_POST['fitvids_wp_jq']));
 	   		update_option('fitvids_wp_selector', esc_js(trim($_POST['fitvids_wp_selector'])));
-			  update_option('fitvids_wp_custom_selector',  esc_js(trim($_POST['fitvids_wp_custom_selector'])));
+			update_option('fitvids_wp_custom_selector',  esc_js(trim($_POST['fitvids_wp_custom_selector'])));
 	   		
-	   		if($_POST['fitvids_wp_jq'] != '') { $fitvids_wp_message .= 'You have enabled jQuery for your theme.'; }
 	   		echo '<div id="message" class="updated below-h2"><p>FitVids is updated. ', $fitvids_wp_message ,'</p></div>';
 	   	}
 	    ?>
@@ -55,25 +53,10 @@ class fitvids_wp {
 		  <?php
 		  wp_nonce_field('fitvids_action','fitvids_ref');
 		  $checked = '';
-	    if(get_option('fitvids_wp_jq') == 'true') { $checked = 'checked="checked"'; }
 	    ?>
 
       <table class="form-table">
 	    <tbody>
-	    <tr>
-		  <td>
-
-		    <h3 style="font-weight: bold;">jQuery</h3>
-				<p>If you are already running jQuery 1.7+ you will not need to check the box. Note that some plugins require different versions of jQuery and may have conflicts with FitVids.</p>
-			  <label><input 	id="fitvids_wp_jq"
-			          value="true"
-			          name="fitvids_wp_jq"
-			          type="checkbox"
-			          <?php if(isset($checked)) echo $checked; ?>
-			      > Add jQuery 1.7.2 from Google CDN</label>
-
-		  </td>
-	    </tr>
 	    <tr>
 		  <td>
 
@@ -100,12 +83,6 @@ class fitvids_wp {
     
     // add FitVids to site
     function fitvids_scripts() {
-    	if(get_option('fitvids_wp_jq') == 'true') {
-    	wp_deregister_script( 'jquery' );
-			wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', '1.0');
-			wp_enqueue_script( 'jquery' );
-    	}
-    	
     	// add fitvids
     	wp_register_script( 'fitvids', plugins_url('/jquery.fitvids.js', __FILE__), array('jquery'), '1.0', true);    	
     	wp_enqueue_script( 'fitvids');
