@@ -6,7 +6,7 @@ Description: This plugin makes videos responsive using the FitVids jQuery plugin
 Version: 1.2
 License: GPL2
 Tags: videos, fitvids, responsive
-Author: IvanDoomer
+Author: Ivan Carlos
 Author URI: http://www.ti.blog.br/
 */
 
