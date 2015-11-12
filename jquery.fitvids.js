@@ -1,6 +1,6 @@
 /*jshint browser:true */
 /*!
-* FitVids 1.2.fork - by Davi Mesquita - https://github.com/frkr and IvanDoomer https://github.com/IvanDoomer
+* FitVids 1.2.fork - by Davi Mesquita - https://github.com/frkr and Ivan Carlos https://github.com/IvanDoomer
 * Released under the WTFPL license - http://sam.zoy.org/wtfpl/
 * Source 1.1: https://github.com/davatron5000/FitVids.js/blob/master/jquery.fitvids.js
 */
