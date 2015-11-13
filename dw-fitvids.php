@@ -3,9 +3,9 @@
 Plugin Name: DW FitVids
 Plugin URI: http://www.ti.blog.br/plugins/dw-fitvids/
 Description: This plugin makes videos responsive using the FitVids jQuery plugin on WordPress.
-Version: 1.2
+Version: 1.3d
 License: GPL2
-Tags: videos, fitvids, responsive
+Tags: videos, fitvids, responsive, youtube, vimeo, kickstarter, doomer
 Author: Ivan Carlos
 Author URI: http://www.ti.blog.br/
 */
@@ -68,6 +68,14 @@ class fitvids_wp {
 			<p><em>jQuery().fitVids({ customSelector: " <input id="fitvids_wp_custom_selector" value="<?php echo stripslashes(get_option('fitvids_wp_custom_selector')); ?>" name="fitvids_wp_custom_selector" type="text"> "});</em></p>
 
 			<p class="submit"><input type="submit" name="submit" class="button-primary" value="Save Changes" /></p>
+
+		  </td>
+	    </tr>
+		<tr>
+		  <td>
+
+			<p style="text-align: center;">If you liked this plugin, please support me to dedicate more time and offer more free plugins to you!<br>
+			<a href="http://gamepad.vg/ip" target="_blank">PayPal</a> | <a href="https://www.coinbase.com/Doomer" target="_blank">Coinbase (bitcoin)</a> | <a href="https://www.patreon.com/IvanCarlos" target="_blank">Patreon</a></p>
 
 		  </td>
 	    </tr>
