@@ -3,8 +3,8 @@ Contributors: IvanCarlos
 Tags: videos, fitvids, responsive, youtube, vimeo, kickstarter, doomer
 Donate link: http://gamepad.vg/ip
 Requires at least: 3.3
-Tested up to: 4.3.1
-Stable tag: 1.3d
+Tested up to: 4.4
+Stable tag: 1.4
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,9 @@ A. You can use Wordpress Plugin Directory Forums here: https://wordpress.org/sup
 1. Plugin settings screen
 
 == Changelog ==
+= 1.4 =
+* Compatibility to Wordpress 4.4 granted
+
 = 1.3d =
 * Information improved
 * Donate links (relax, no banners or intrusive stuff!)
